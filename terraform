@@ -1,0 +1,10 @@
+provider "aws"{
+	region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+	ami ="ami-0c7217cdde317cfec"
+	instance_type="t2.micro"
+	subnet_id="subnet-055978cff49c754a3"	
+	key_name="nuthan-aws1"
+}
